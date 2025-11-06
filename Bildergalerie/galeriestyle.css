@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+nav {
+    background: white;
+    padding: 10px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+#navul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    height: 45px;
+    width: auto;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: #333;
+}
+
+.navlink {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.navlink::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ff7f11;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease;
+}
+
+.navlink:hover {
+    color: #ff7f11;
+}
+
+.navlink:hover::after {
+    width: 100%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.gallery-item {
+    border-radius: 12px;
+    overflow: hidden; 
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 12px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.2);
+}
