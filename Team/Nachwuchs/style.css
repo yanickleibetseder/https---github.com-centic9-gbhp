@@ -83,12 +83,12 @@ nav {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   z-index: 2;
 }
-#altersklassea{
+#altersklasseau17{
   font-size: 60px;
   color: transparent;
   -webkit-text-stroke: 2.5px #ff7f11;
 }
-#altersklassea::before{
+#altersklasseau17::before{
   content: "U17";
   position: absolute;
   width: 0%;
@@ -98,10 +98,100 @@ nav {
   transition: 1s ease-in-out;
   white-space: nowrap;
 }
-#altersklassea:hover::before{
-  width: 26%;
+#altersklasseau17:hover::before{
+  width: 10%;
 }
 
+#altersklasseau15{
+  font-size: 60px;
+  color: transparent;
+  -webkit-text-stroke: 2.5px #ff7f11;
+}
+#altersklasseau15::before{
+  content: "U15";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  color: #ff7f11;
+  transition: 1s ease-in-out;
+  white-space: nowrap;
+}
+#altersklasseau15:hover::before{
+  width: 10%;
+}
+#altersklasseau13{
+  font-size: 60px;
+  color: transparent;
+  -webkit-text-stroke: 2.5px #ff7f11;
+}
+#altersklasseau13::before{
+  content: "U13";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  color: #ff7f11;
+  transition: 1s ease-in-out;
+  white-space: nowrap;
+}
+#altersklasseau13:hover::before{
+  width: 10%;
+}
+#altersklasseau11{
+  font-size: 60px;
+  color: transparent;
+  -webkit-text-stroke: 2.5px #ff7f11;
+}
+#altersklasseau11::before{
+  content: "U11";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  color: #ff7f11;
+  transition: 1s ease-in-out;
+  white-space: nowrap;
+}
+#altersklasseau11:hover::before{
+  width: 10%;
+}
+#altersklasseau9{
+  font-size: 60px;
+  color: transparent;
+  -webkit-text-stroke: 2.5px #ff7f11;
+}
+#altersklasseau9::before{
+  content: "U9";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  color: #ff7f11;
+  transition: 1s ease-in-out;
+  white-space: nowrap;
+}
+#altersklasseau9:hover::before{
+  width: 7%;
+}
+#altersklasseau7{
+  font-size: 60px;
+  color: transparent;
+  -webkit-text-stroke: 2.5px #ff7f11;
+}
+#altersklasseau7::before{
+  content: "U7";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  color: #ff7f11;
+  transition: 1s ease-in-out;
+  white-space: nowrap;
+}
+#altersklasseau7:hover::before{
+  width: 7%;
+}
 @keyframes fade-in{
   to {scale: 1; opacity: 1;}
 }
@@ -129,7 +219,7 @@ nav {
     position: relative;
     overflow: hidden;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
-    height: 350px; 
+    height: 300px; 
 }
 
 .box img {
