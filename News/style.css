@@ -1,3 +1,6 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
 .fade-in {
       opacity: 0;
       animation: fadeIn2 1s forwards;
@@ -73,20 +76,22 @@ nav {
   position: absolute;
   right: 2%;
   display: inline-block;
+  z-index: 100;
 }
 
 #dropdown-button {
-  background-color: #2c3e50;
+  background-color:  #ff7f11;
   color: white;
   padding: 10px 16px;
   border: none;
   cursor: pointer;
   border-radius: 6px;
   font-size: 16px;
+  z-index: 100;
 }
 
 #dropdown-button:hover {
-  background-color: #34495e;
+  background-color: #da6600;
 }
 
 #dropdown-list {
@@ -98,14 +103,16 @@ nav {
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
   border-radius: 6px;
   margin-top: 5px;
-  padding: 0;
+  padding: 5px;
   list-style: none;
   z-index: 100;
 }
 
 .dropdown-item {
+  position: relative;
   padding: 10px 16px;
   cursor: pointer;
+  left: 25%;
 }
 
 .dropdown-item:hover {
@@ -116,12 +123,71 @@ nav {
   display: none;
 }
 
-#month{
+#months {
+  box-sizing: border-box;
+    position: relative;
+    flex: 1;
+    width: 100%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+#monthsarea {
+  padding: 10px 7.5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+}
+
+.monthcard {
+    border-radius: 10px;
+    position: relative;
+    overflow:visible;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    height: 200px; 
+}
+
+.monthcard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.monthcard h1{
+    justify-self: center;
+    color: white;
+    position: relative;
+    bottom: 35%;
+    z-index: 5;
+}
+
+.winteroverlay{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: black;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.3;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+.month{
   position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 #newsa{
@@ -137,7 +203,6 @@ nav {
     flex: 1;
     width: 100%;
     padding-bottom: 7%;
-
 }
 
 .wrapper {
@@ -206,9 +271,9 @@ nav {
 .overlay h3 {
     font-weight: 600;
     margin-bottom: 8px;
-    font-family: "Oswald", serif;
+    font-family: 'Inter', sans-serif;
     font-size: 22px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     flex-shrink: 0;
 }
 

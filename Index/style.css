@@ -76,6 +76,7 @@ nav {
 
 
 #image-track > .image{
+  user-select: none;
     width: 40vmin;
     height: 56vmin;
     object-fit: cover;
@@ -83,6 +84,7 @@ nav {
 }
 
 #image-track{
+  user-select: none;
     display: flex;
     gap: 4vmin;
     position: absolute;
@@ -93,6 +95,7 @@ nav {
 
 
 #bilderbutton {
+  user-select: none;
       position: absolute;
       top: 500px;
       width: 250px;
@@ -307,6 +310,7 @@ nav {
 #newsa{
   font-size: 80px;
   color: transparent;
+  text-decoration: none;
   -webkit-text-stroke: 2.5px #ff7f11;
   scale: 0.8; opacity: 0;
   animation: fade-in linear forwards;
